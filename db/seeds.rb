@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'json'
+require 'open-uri'
+require 'rest-client'
+blockchain_url = 'https://blockchain.info/ticker'
+btc_data = JSON.parse(RestClient.get(blockchain_url).body)
+price_data = btc_data['EUR']['buy']
+
+p btc_data

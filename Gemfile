@@ -8,7 +8,7 @@ gem 'pg'
 gem 'puma'
 gem 'rails', '5.0.5'
 gem 'redis'
-
+gem 'rest-client'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
@@ -16,7 +16,7 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-
+gem 'whenever', :require => false
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
